@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		#search {
+			width: 150px;
+			height: 21px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="search">
+
+	<script type="text/javascript" src="../dist/js/autocomplete.js"></script>
+	<script type="text/javascript">
+		var autocomplete = new AutoComplete('search', '../dist/json/data.json', {
+				// src: '111'
+			});
+	</script>
+</body>
+</html>
